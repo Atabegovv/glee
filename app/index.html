@@ -39,9 +39,9 @@
                         <a href="" class="logo">
                             <svg class="logo__svg"><use xlink:href="./images/sprite.svg#logo"></use></svg>
                         </a>
-                        <div class="catalog">
-                            <div class="catalog__icon"></div>
-                            <p class="catalog__text">Католог</p>
+                        <div class="catalog-btn">
+                            <div class="catalog-btn__icon"></div>
+                            <p class="catalog-btn__text">Католог</p>
                         </div>
                         <div class="search">
                             <input class="search__input" type="text" placeholder="Искать..." />
@@ -91,9 +91,9 @@
             </header>
             <main class="main">
                 <div class="container-fluid">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                    <div class="header-slider swiper">
+                        <div class="header-slider__wrapper swiper-wrapper">
+                            <div class="header-slider__slide swiper-slide">
                                 <div class="slide">
                                     <div class="slide__content">
                                         <h2 class="slide__title">Электросамокаты Kugoo Kirin от официального дилера</h2>
@@ -161,6 +161,82 @@
                         </div>
                     </div>
                 </div>
+
+                <section class="catalog">
+                    <div class="container">
+                        <div class="catalog__wrapper">
+                            <div class="catalog__top">
+                                <h4 class="catalog__title"></h4>
+                                <div class="catalog__tabs">
+                                    <button class="catalog__btn"></button>
+                                    <button class="catalog__btn"></button>
+                                    <button class="catalog__btn"></button>
+                                    <button class="catalog__btn"></button>
+                                </div>
+                            </div> 
+                            <div class="catalog__tab-content">
+                                <div class="catalog__items">
+
+                                    <div class="card">
+                                        <img class="card__img" src="./images/card.webp" alt="card image">                                        
+                                        <div class="card__content">
+                                            <a class="card__title" href="">Kugoo Kirin M4</a>
+                                            <div class="card__info">
+                                                <div class="card__info-row">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#accumulator-icon"></use>
+                                                    </svg>
+                                                    <span>2000 mAh</span>
+                                                </div>
+                                                <div class="card__info-row">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#power-icon"></use>
+                                                    </svg>
+                                                    <span>1,2 л.с.</span>
+                                                </div>
+                                                <div class="card__info-row">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#speedometer-icon"></use>
+                                                    </svg>
+                                                    <span>60 км/ч</span>
+                                                </div>
+                                                <div class="card__info-row">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#timer-icon"></use>
+                                                    </svg>
+                                                    <span>5 часов</span>
+                                                </div>
+                                            </div>
+                                            <div class="card__actions">
+                                                <div class="card__price">
+                                                    <p class="card__old-price">39 900 ₽</p>
+                                                    <p class="card__new-price">29 900 ₽</p>
+                                                </div>
+                                                <button class="card__btn card__btn--shop">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#shopping-cart-icon"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="card__btn card__btn--fovarite">
+                                                    <svg>
+                                                        <use xlink:href="./images/sprite.svg#like-icon"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="card__buy-now">Купить в 1 клик</button>
+                                            <button class="card__btn card__btn--balance">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#balance-icon"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
 
             <footer class="footer">

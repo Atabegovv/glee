@@ -1,6 +1,6 @@
 "use strict";
 
-const swiper = new Swiper('.swiper',{
+const swiper = new Swiper('.header-slider',{
     // стрелки
     navigation:{
       prevEl: '.swiper-button-prev',
@@ -48,4 +48,29 @@ const swiper = new Swiper('.swiper',{
     //   480:{slidesPerview: 2, slidesPerGroup: 2,},
     //   990:{slidesPerview: 3, slidesPerGroup: 3,},
     // },
+  });
+
+  const card_slider = new Swiper('.card__slider',{
+    // стрелки
+    navigation:{
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+    },
+    grabCursor: true,
+    keyboard:{
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    mousewheel:{
+      sensitivity: 1,
+    },
+    slideToClickedSlide: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 0,
+    watchOverflow: true,
+    centeredSlides: true,
+    speed: 1000,
+    loop: true,
   });

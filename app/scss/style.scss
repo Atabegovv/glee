@@ -61,7 +61,7 @@
     height: 40px;
 }
 
-.catalog{
+.catalog-btn{
     border-radius: 10px;
     background: $--accent;
     padding: 10px 20px;
@@ -284,7 +284,117 @@
     }
 }
 
+.catalog{
+    margin-bottom: 300px;
 
+}
+
+
+.card{
+    position: relative;
+    width: 255px;
+    border-radius: 10px;
+    border: 1px solid $--line-color;
+
+    &__img{
+        width: 100%;
+        height: 230px;
+        object-fit: fill;
+        border-radius: 10px 10px 0 0;
+        background-color: $--bg;
+    }
+
+    &__content{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__title{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+        color: $--black;
+    }
+
+    &__info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    &__info-row{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        svg{
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__actions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__price{
+        margin-right: auto;
+    }
+
+    &__old-price{
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+        text-decoration: 2px solid $--text line-through;
+    }
+
+    &__new-price{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        color: $--black;
+    }
+
+    &__btn{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $--line-color;
+        background-color: $--bg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg{
+            width: 20px;
+            height: 20px;
+
+        }
+    }
+
+    &__buy-now{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $--accent;
+        color: $--white;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    &__btn--balance{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
 
 
 .newsletter{
