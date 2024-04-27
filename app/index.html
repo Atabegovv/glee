@@ -166,17 +166,78 @@
                     <div class="container">
                         <div class="catalog__wrapper">
                             <div class="catalog__top">
-                                <h4 class="catalog__title"></h4>
+                                <h4 class="catalog__title">Электросамокаты</h4>
                                 <div class="catalog__tabs">
-                                    <button class="catalog__btn"></button>
-                                    <button class="catalog__btn"></button>
-                                    <button class="catalog__btn"></button>
-                                    <button class="catalog__btn"></button>
+                                    <button class="catalog__btn">Хиты продаж</button>
+                                    <button class="catalog__btn">Для города</button>
+                                    <button class="catalog__btn">Для взрослых</button>
+                                    <button class="catalog__btn">Для детей</button>
                                 </div>
                             </div> 
                             <div class="catalog__tab-content">
-                                <div class="catalog__items">
+                                <div class="catalog__items" id="cards">
 
+                                    <script>
+                                        const arr = ['Kugoo Kirin M1', 'Kugoo Kirin M2', 'Kugoo Kirin M3', 'Kugoo Kirin M4', 'Kugoo Kirin M5', 'Kugoo Kirin M6', 'Kugoo Kirin M7', 'Kugoo Kirin M8', 'Kugoo Kirin M9', 'Kugoo Kirin M10', 'Kugoo Kirin M11', 'Kugoo Kirin M12', 'Kugoo Kirin M13', 'Kugoo Kirin M14', 'Kugoo Kirin M15', 'Kugoo Kirin M16', 'Kugoo Kirin M17', 'Kugoo Kirin M18', 'Kugoo Kirin M19'];
+                                        const card = arr.map((item) => `
+                                                <div class="card">
+                                                    <img class="card__img" src="./images/card.webp" alt="card image">                                        
+                                                    <div class="card__content">
+                                                        <a class="card__title" href="">${item}</a>
+                                                        <div class="card__info">
+                                                            <div class="card__info-row">
+                                                                <svg>
+                                                                    <use xlink:href="./images/sprite.svg#accumulator-icon"></use>
+                                                                </svg>
+                                                                <span>2000 mAh</span>
+                                                            </div>
+                                                            <div class="card__info-row">
+                                                                <svg>
+                                                                    <use xlink:href="./images/sprite.svg#power-icon"></use>
+                                                                </svg>
+                                                                <span>1,2 л.с.</span>
+                                                            </div>
+                                                            <div class="card__info-row">
+                                                                <svg>
+                                                                    <use xlink:href="./images/sprite.svg#speedometer-icon"></use>
+                                                                </svg>
+                                                                <span>60 км/ч</span>
+                                                            </div>
+                                                            <div class="card__info-row">
+                                                                <svg>
+                                                                    <use xlink:href="./images/sprite.svg#timer-icon"></use>
+                                                                </svg>
+                                                                <span>5 часов</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="card__price">
+                                                                <p class="card__old-price">39 900 ₽</p>
+                                                                <p class="card__new-price">29 900 ₽</p>
+                                                            </div>
+                                                            <button class="card__btn card__btn--shop">
+                                                                <svg>
+                                                                    <use xlink:href="./images/sprite.svg#shopping-cart-icon"></use>
+                                                                </svg>
+                                                            </button>
+                                                            <button class="card__btn card__btn--fovarite">
+                                                                <svg>
+                                                                    <use xlink:href="./images/sprite.svg#like-icon"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <button class="card__buy-now">Купить в 1 клик</button>
+                                                        <button class="card__btn card__btn--balance">
+                                                            <svg>
+                                                                <use xlink:href="./images/sprite.svg#balance-icon"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            `).join('');
+                                        document.getElementById('cards').innerHTML = card;
+                                    </script>
+                                
                                     <div class="card">
                                         <img class="card__img" src="./images/card.webp" alt="card image">                                        
                                         <div class="card__content">
@@ -234,6 +295,7 @@
 
                                 </div>
                             </div>
+                            <a href="" class="catalog__link">Смотреть все</a>
                         </div>
                     </div>
                 </section>
