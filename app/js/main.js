@@ -50,7 +50,7 @@ const swiper = new Swiper('.header-slider',{
     // },
   });
 
-  const card_slider = new Swiper('.card__slider',{
+  const video_swiper = new Swiper('.video-swiper',{
     // стрелки
     navigation:{
       prevEl: '.swiper-button-prev',
@@ -66,11 +66,9 @@ const swiper = new Swiper('.header-slider',{
       sensitivity: 1,
     },
     slideToClickedSlide: true,
-    slidesPerView: 1,
+    slidesPerView: 2.25,
     slidesPerGroup: 1,
-    spaceBetween: 0,
+    spaceBetween: 30,
     watchOverflow: true,
-    centeredSlides: true,
     speed: 1000,
-    loop: true,
   });
