@@ -51,11 +51,6 @@ const swiper = new Swiper('.header-slider',{
   });
 
   const video_swiper = new Swiper('.video-swiper',{
-    // стрелки
-    navigation:{
-      prevEl: '.swiper-button-prev',
-      nextEl: '.swiper-button-next',
-    },
     grabCursor: true,
     keyboard:{
       enabled: true,
@@ -67,6 +62,25 @@ const swiper = new Swiper('.header-slider',{
     },
     slideToClickedSlide: true,
     slidesPerView: 2.25,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    watchOverflow: true,
+    speed: 1000,
+  });
+  
+
+  const blog_swiper = new Swiper('.blog-swiper',{
+    grabCursor: true,
+    keyboard:{
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    mousewheel:{
+      sensitivity: 1,
+    },
+    slideToClickedSlide: true,
+    slidesPerView: 3.25,
     slidesPerGroup: 1,
     spaceBetween: 30,
     watchOverflow: true,
